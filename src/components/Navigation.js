@@ -10,6 +10,7 @@ const Navigation = () => {
     <Nav className="me-auto">
       <Nav.Link href="/">Home</Nav.Link>
       <Nav.Link href="/search">Search</Nav.Link>
+      <Nav.Link href="/profile">Create Profile</Nav.Link>
     </Nav>
     </Container>
   </Navbar>

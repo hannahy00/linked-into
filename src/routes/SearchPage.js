@@ -17,6 +17,21 @@ const SearchPage = () => {
                             <input className='form-control col-xs-2' type='text' id='topic' placeholder='Ex. Computer science' />
                         </div>
                     </Col>
+                    <Col className=''>
+                        <h6>Gender:</h6>
+                        <div className='form-group'>
+                            <input className='form-check-input' type='checkbox' id='male' />
+                            <label className='form-check-label' for='male'>Male</label>
+                        </div>
+                        <div className='form-group'>
+                            <input className='form-check-input' type='checkbox' id='female' />
+                            <label className='form-check-label' for='female'>Female</label>
+                        </div>
+                        <div className='form-group'>
+                            <input className='form-check-input' type='checkbox' id='non-binary' />
+                            <label className='form-check-label' for='non-binary'>Non Binary</label>
+                        </div>
+                    </Col>
                     <Col>
                         <h6>Current level of study:</h6>
                         <div className='form-group'>
@@ -45,6 +60,7 @@ const SearchPage = () => {
 
                     <Profile
                         name='Peter Parker'
+                        gender='Male'
                         occupation='Highschool Student'
                         interest='Computer Science'
                         body="I'm currently looking to make a career in the tech field!" />
@@ -52,6 +68,7 @@ const SearchPage = () => {
                 <Col>
                     <Profile
                         name='Tony Stark'
+                        gender='Male'
                         occupation='CEO @ Stark Industries'
                         interest='Computer Science'
                         body='Hit me up if you want a job.' />
@@ -59,6 +76,7 @@ const SearchPage = () => {
                 <Col>
                     <Profile
                     name='Emily Carr'
+                    gender='Female'
                     occupation='University Student'
                     interest='Art'
                     body='Currently a student at UBC. Feel free to connect if you have
@@ -68,9 +86,52 @@ const SearchPage = () => {
                 <Col>
                 <Profile 
                 name='Justin Trudeau'
+                gender='Male'
                 occupation='Prime Minister'
                 interest='Politics'
                 body='O Canada.' />
+                </Col>
+            </Row>
+            <Row>
+                <Col>
+                <Profile
+                    name='Alex Wu'
+                    gender='Non Binary'
+                    occupation='Game Developer @ Nintendo'
+                    interest='Game Development, Computer Science'
+                    body="I've been a game developer for 10 years, feel free to connect and ask 
+                    me any questions you have about the game industry! :) "
+                    />
+                </Col>
+                <Col>
+                <Profile
+                    name='Annie Kim'
+                    gender='Female'
+                    occupation='Software Developer @ Company'
+                    interest='Software Development, Computer Science'
+                    body='I recently graduated from UBC and have been working for about a year. 
+                    If you are having any difficulties in choosing a career path, feel free to message!'
+                    />
+                </Col>
+                <Col>
+                <Profile
+                    name='Sherry Yoo'
+                    gender='Female'
+                    occupation='Highschool Student'
+                    interest='Game Development, Computer Science'
+                    body="I've been interested in game development but I'm not too sure where to start.
+                    If you have any guidance or want to work together, please connect with me!"
+                    />
+                </Col>
+                <Col>
+                <Profile
+                    name='Angie Lee'
+                    gender='Female'
+                    occupation='University Student'
+                    interest='Machine Learning, Computer Science'
+                    body="I'm currently a first year at UBC and want to do machine learning in the future!
+                    If you work in the industry I would love to connect and hear about your experiences."
+                    />
                 </Col>
             </Row>
         </Container>

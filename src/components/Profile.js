@@ -12,12 +12,12 @@ const popover = () => (
     </Popover>
 );
 
-const Profile = ({ name, occupation, interest, body }) => {
+const Profile = ({ name, gender, occupation, interest, body }) => {
     return <div>
         <Card style={{ width: '18rem' }}>
             {/* <Card.Img variant="top" src="images/tony_stark.js/100px180" /> */}
             <Card.Body>
-                <Card.Title>{name}</Card.Title>
+                <Card.Title>{name} ({gender})</Card.Title>
                 <Card.Subtitle className='text-muted'>{occupation}</Card.Subtitle>
                 <Card.Subtitle className='text-success py-2'>Interests: {interest}</Card.Subtitle>
                 <Card.Text className='font-italic'>{body}</Card.Text>
